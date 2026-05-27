@@ -1,0 +1,35 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+*.iml
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/app/debug.keystore
+
+# iOS
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/*.xcworkspace/
+ios/Pods/
+
+# Generated code (check these in if you want reproducible builds without build_runner)
+# lib/**/*.g.dart
+# lib/**/*.freezed.dart
+
+# Vosk model (large binary — do not commit)
+assets/vosk_model/*.zip
+assets/vosk_model/*/
+
+# IDE
+.idea/
+.vscode/settings.json
+*.swp
