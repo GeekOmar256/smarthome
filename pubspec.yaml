@@ -1,0 +1,73 @@
+name: teacher_recorder
+description: A screen recording application for teachers with topic segmentation and transcription.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Screen recording — foreground service scaffold
+  flutter_background_service: ^5.0.9
+
+  # System overlay (Android SYSTEM_ALERT_WINDOW)
+  flutter_overlay_window: ^0.4.3
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # File path resolution
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # Persistence for metadata across app switches
+  shared_preferences: ^2.3.3
+
+  # Immutable models
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # UUID for topic/session IDs
+  uuid: ^4.5.1
+
+  # Form validation
+  reactive_forms: ^17.0.1
+
+  # FFmpeg — full GPL build for H.264, AAC, concat, trim, audio extraction
+  ffmpeg_kit_flutter_full_gpl: ^6.0.3
+
+  # Isolate helpers (flutter_isolate allows plugin calls from background isolates)
+  flutter_isolate: ^2.0.4
+
+  # Speech-to-text (on-device, offline)
+  vosk_flutter: ^0.3.0
+
+  # Video playback (for testing/preview)
+  video_player: ^2.9.2
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  build_runner: ^2.4.13
+  riverpod_generator: ^2.6.1
+  freezed: ^2.5.8
+  json_serializable: ^6.8.0
+  flutter_lints: ^4.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/vosk_model/
+    - test/assets/
